@@ -26,6 +26,14 @@
     #page-search-results .cards img {
         height: 250px;
     }
+
+    #page-create-point .field-group {
+        flex-direction: column;
+    }
+
+    #page-create-point .field-group .field + .field {
+        margin-left: 0;
+    }
 }
 
 @media (min-width: 1700px) {
@@ -37,5 +45,14 @@
 @media (max-height: 760px) {
     #page-home {
         background-position-y: 150px;
+    }
+}
+
+@media (max-width: 610px) {
+    #page-create-point form legend {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
     }
 }
