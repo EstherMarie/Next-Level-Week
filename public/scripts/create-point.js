@@ -73,7 +73,8 @@ function handleSelectedItem(event) {
     itemLi.classList.toggle("selected") // O classList se refere a classe do elemento html. Ele pode ser add, remove ou toggle, que é ambos.
 
     const itemId = itemLi.dataset.id //era event.dataset . Essa já é a variável acima; 
-
+    /* Após a criação do back-end, os ids dos itens foram alterados de numéricos para strings (nomes dos itens) */
+    console.log('ITEM ID: ', itemId)
     
     //1 Verificar se existe itens selecionados
     //2 Caso sim, pegar os itens selecionados
@@ -95,7 +96,8 @@ function handleSelectedItem(event) {
         selectedItems.push(itemId)
     }
 
-    
+    console.log('selectedItems: ', selectedItems)
+
     //6 atualizar o campo escondido com os itens selecionados (isso tudo é um algoritmo :D)
     // aqui estava o const collectedItems = document.querySelector("input[name=items]") . Foi movido para cima para evitar que esse elemento fosse procurado a cada momento que a função fosse executada.
     collectedItems.value = selectedItems
