@@ -58,7 +58,7 @@ server.post("/savepoint", (req, res) => {
             address,
             address2,
             state,
-            ciy,
+            city,
             items
         ) VALUES (?,?,?,?,?,?,?);
     `
